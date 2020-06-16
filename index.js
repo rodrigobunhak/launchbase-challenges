@@ -1,12 +1,11 @@
-// Building and printing objects
-const company = {
-  name: 'Rocketseat',
-  color: 'Roxo',
-  business: 'Programação',
-  address: {
-    street: 'Rua Guilherme Gembala',
-    number: 260
-  }
+// Arrays and objects
+const programmer = {
+  name: 'João',
+  age: 25,
+  technologies: [
+    { name: 'C++', specialty: 'Desktop' },
+    { name: 'Python', specialty: 'Data Science' },
+    { name: 'JavaScript', specialty: 'Web/Mobile' }
+  ]
 }
-
-console.log(`A empresa ${company.name} está localizada em ${company.address.street}, ${company.address.number}`)
+console.log(`O usuário ${programmer.name} tem ${programmer.age} anos e usa a tecnologia ${programmer.technologies[0].name} com especialidade em ${programmer.technologies[0].specialty}`)
