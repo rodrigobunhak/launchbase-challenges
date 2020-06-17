@@ -4,6 +4,7 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    | Challenge Description                                      
 | ------------- | ---------- | -------------
+| `a591f56`     | Challenge 1.4 - Application: Banking operations | [launchbase](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-4-aplicacao-operacoes-bancarias.md "launchbase") |
 | `552b222`     | Challenge 1.3 - Functions and loop structures - Sum of expense and revenue | [launchbase](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md "launchbase") |
 | `a63567e`     | Challenge 1.3 - Functions and loop structures - Search by technologie | [launchbase](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md "launchbase") |
 | `aec261f`     | Challenge 1.3 - Functions and loop structures - Users and technologies | [launchbase](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/blob/master/desafios/01-3-funcoes-e-estruturas-de-repeticao.md "launchbase") |
