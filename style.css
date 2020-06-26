@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+:root {
+  --primary-color: #6c4fbb;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +19,57 @@ header {
   width: 100%;
   background: #292a31;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 header a {
   margin-right: 30px;
   text-decoration: none;
   color: #d7e3ee;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main img {
+  margin: 30px auto 5px;
+  border-radius: 50%;
+  border: 2px solid #d7e3ee;
+}
+
+main h1 {
+  font-size: 68px;
+  color: var(--primary-color);
+}
+
+main p {
+  font-size: 14px;
+  color: #bdc7cf;
+  margin-top: 20px;
+}
+
+main ul {
+  margin: 30px 0;
+  list-style: none;
+  color: #d7e3ee;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  margin: 15px;
+  text-decoration: none;
+  color: #d7e3ee;
+}
+
+footer a:hover {
+  color: var(--primary-color);
 }
