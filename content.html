@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 2-3: Course Page and iframe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Community</a>
+    <a href="mailto:oi@rocketseat.com.br">Mail</a>
+    <a href="tel:+5547992078767">Phone</a>
+    <a href="about.html">About</a>
+    <a href="content.html">Content</a>
+  </header>
+  <main>
+    <div class="courses">
+      <div class="course" id="starter">
+        <div class="course__head">
+          <img src="https://skylab.rocketseat.com.br/static/media/Starter.64c237cc.svg" alt="logo course">
+        </div>
+        <div class="course__main">
+          <h1></h1>
+          <p>43 Modules</p>
+          <p>Accession: Free</p>
+        </div>
+      </div>
+
+      <div class="course" id="launchbase">
+        <div class="course__head">
+          <img src="https://skylab.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="logo course">
+        </div>
+        <div class="course__main">
+          <h1></h1>
+          <p>98 Modules</p>
+          <p>Accession: Pago</p>
+        </div>
+      </div>
+
+      <div class="course" id="gostack">
+        <div class="course__head">
+          <img src="https://skylab.rocketseat.com.br/static/media/GoStack.83a178a0.svg" alt="logo course">
+        </div>
+        <div class="course__main">
+          <h1></h1>
+          <p>120 Modules</p>
+          <p>Accession: Pago</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal__head">
+        <span id="maximize-modal">EXIBIR</span>
+        <span id="close-modal">FECHAR</span>
+      </div>
+      <div class="modal__content">
+        <iframe src="https://rocketseat.com.br/gostack" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

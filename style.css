@@ -34,7 +34,7 @@ main {
   text-align: center;
 }
 
-main img {
+main .wrapper img {
   margin: 30px auto 5px;
   border-radius: 50%;
   border: 2px solid #d7e3ee;
@@ -72,4 +72,80 @@ footer a {
 
 footer a:hover {
   color: var(--primary-color);
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.courses .course {
+  margin-top: 20px;
+  background: #292a31;
+  max-width: 400px;
+  border: 1px solid #23242b;
+  border-radius: 6px;
+}
+
+.courses .course:hover {
+  border: 1px solid #3f3f3f;
+  cursor: pointer;
+}
+
+.courses .course .course__head {
+  background: #23242b;
+  border-radius: 6px 6px 0 0;
+  padding: 20px 0;
+}
+
+.courses .course .course__main {
+  padding-bottom: 200px;
+}
+
+.modal-overlay {
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  background: rgba(17, 18, 20, 0.801);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  visibility: visible;
+}
+
+.modal-overlay .modal {
+  width: 60%;
+  margin: 5vh auto;
+  background: #31323a;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+}
+
+.modal-overlay .modal .modal__head {
+  padding: 10px;
+  text-align: right;
+}
+
+.modal-overlay .modal .modal__head span{
+  color: #d7e3ee;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.modal-overlay .modal .modal__content {
+  width: 100%;
+  height: 0vh;
+}
+
+.modal-overlay .modal .modal__content.maximize {
+  height: 80vh;
+}
+
+.modal-overlay .modal .modal__content iframe {
+  width: 100%;
+  height: 100%;
 }
