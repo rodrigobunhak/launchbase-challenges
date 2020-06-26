@@ -30,7 +30,7 @@ Challenges resolved and separated by commit, as listed below.
 
 `$ git clone https://github.com/rodrigobunhak/launchbase-challenges.git`
 
-#### Navagation on repository
+#### Navegation on repository
 Example
 
 `$ git checkout e68d234`
