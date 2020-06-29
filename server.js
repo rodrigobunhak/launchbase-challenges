@@ -7,7 +7,8 @@ const courses = require('./data')
 
 server.set("view engine", "njk")
 nunjucks.configure("views", {
-  express: server
+  express: server,
+  noCache: true
 })
 
 server.use(express.static('public'))
@@ -19,6 +20,25 @@ server.get("/", function(req, res) {
 server.get("/about", function(req, res) {
   return res.render("about")
 })
+
+server.get("/course", function(req, res) {
+  const id = req.query.id
+  console.log(id)
+
+  const course = courses.find(function(course){
+    if (course.id == id) {
+      return true
+    }
+  })
+
+  if (!course) {
+    return res.send("course not found!")
+  }
+
+  return res.render("course", {course})
+
+})
+
 
 server.use(function(req, res) {
   res.status(404).render("not-found")
