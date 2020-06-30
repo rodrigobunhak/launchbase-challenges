@@ -14,6 +14,10 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `e64fec8`     | Challenge 4-1 - Header |
+| `5734866`     | Challenge 3-3 - Course description page |
+| `f07a24d`     | Challenge 3-2 - Nunjucks files and dynamic data |
+| `b1503f4`     | Challenge 3-1 - First Server |
 | `c8c9f0c`     | Challenge 2-3 - Course Page and iframe |
 | `5289301`     | Challenge 2-2 - Page Info |
 | `e210403`     | Challenge 2-1 - First HTML |
