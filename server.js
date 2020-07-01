@@ -11,7 +11,7 @@ nunjucks.configure("views", {
 server.use(express.static('public'))
 
 server.get("/", function(req, res) {
-  return res.render("layout")
+  return res.render("teachers/index")
 })
 
 server.get("/students", function(req, res) {
