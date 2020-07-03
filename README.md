@@ -9,11 +9,12 @@
 </p>
 
 
-
 Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `6cd71ac`     | Challenge 4-3 - Form e Teacher register route |
+| `e246e57`     | Challenge 4-2 - Teacher card |
 | `e64fec8`     | Challenge 4-1 - Header |
 | `5734866`     | Challenge 3-3 - Course description page |
 | `f07a24d`     | Challenge 3-2 - Nunjucks files and dynamic data |
