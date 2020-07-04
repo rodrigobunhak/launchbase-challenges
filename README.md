@@ -13,6 +13,8 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `792c9fa`     | Challenge 4-4 - Presentation, edition and format data of a teacher - Edit |
+| `f0afa56`     | Challenge 4-4 - Presentation, edition and format data of a teacher - Show |
 | `6cd71ac`     | Challenge 4-3 - Form e Teacher register route |
 | `e246e57`     | Challenge 4-2 - Teacher card |
 | `e64fec8`     | Challenge 4-1 - Header |
