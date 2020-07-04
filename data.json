@@ -1,36 +1,24 @@
 {
   "teachers": [
     {
-      "avatar_url": "https://sdddddddd",
-      "name": "Joao Carlos",
-      "birth": "2020-07-17",
-      "escolaridade": "3",
-      "tipo_aula": "pre",
-      "acompanhamento": "tresd"
-    },
-    {
-      "avatar_url": "https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80",
-      "name": "Joana Monterei",
-      "birth": "2020-07-10",
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1584277261846-c6a1672ed979?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1131&q=80",
+      "name": "John Vallajo II",
+      "birth": -222739200000,
       "escolaridade": "4",
       "tipo_aula": "pre",
-      "acompanhamento": "te"
+      "acompanhamentos": "Física, Matemática, Algebra",
+      "created_at": 1593824046957
     },
     {
-      "avatar_url": "https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80",
-      "name": "Joao Carlos",
-      "birth": "2020-07-09",
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "name": "Ana Julia",
+      "birth": 774748800000,
       "escolaridade": "3",
-      "tipo_aula": "pre",
-      "acompanhamento": "teste, teste2"
-    },
-    {
-      "avatar_url": "https://images.unsplash.com/photo-1532384305128-54c7ac0d7139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "name": "Joana Monterei",
-      "birth": "2020-07-17",
-      "escolaridade": "1",
       "tipo_aula": "dis",
-      "acompanhamento": "te"
+      "acompanhamentos": "Quimica",
+      "created_at": 1593825704458
     }
   ]
 }
