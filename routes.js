@@ -23,11 +23,7 @@ routes.get("/students", function(req, res) {
 
 routes.get("/teachers/:id", teachers.show)
 
-routes.get("/teachers/:id/edit", function(req, res) {
-  //TODO: criar página de alteração do cadastro de professores
-  return res.send('...')
-})
-
+routes.get("/teachers/:id/edit", teachers.edit)
 
 //* export routes 
 module.exports = routes

@@ -1,6 +1,6 @@
 const fs = require('fs')
-const data= require("./data.json")
-const { age, graduation } = require('./utils')
+const data = require("./data.json")
+const { age, graduation, date, tipo_aula } = require('./utils')
 
 exports.post = function (req, res) {
   /**
@@ -54,8 +54,27 @@ exports.show = function (req, res) {
     age: age(foundTeacher.birth),
     escolaridade: graduation(foundTeacher.escolaridade),
     acompanhamentos: foundTeacher.acompanhamentos.split(","),
+    tipo_aula: tipo_aula(foundTeacher.tipo_aula),
     created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at),
   }
 
   return res.render("teachers/show", { teacher })
+}
+
+exports.edit = function (req, res) {
+
+  const { id } = req.params
+
+  const foundTeacher = data.teachers.find(function(teacher){
+    return teacher.id == id
+  })
+
+  if (!foundTeacher) return res.send("Teacher not found!")
+
+  const teacher = {
+    ...foundTeacher,
+    birth: date(foundTeacher.birth)
+  }
+
+  return res.render("teachers/edit", { teacher })
 }

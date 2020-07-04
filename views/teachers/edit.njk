@@ -3,7 +3,7 @@
 {% block content %}
 
 <form class="card" method="POST" action="/teachers">
-    <section class="avatar" style="background:url(https://images.unsplash.com/photo-1555116505-38ab61800975?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80) no-repeat center / cover"></section>
+    <section class="avatar" style="background:url({{ teacher.avatar_url }}) no-repeat center / cover"></section>
     <section class="details">
         {% include "teachers/fields.njk" %}
     </section>

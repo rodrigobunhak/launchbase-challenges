@@ -1,0 +1,111 @@
+<div class="item">
+  <div>Avatar</div>
+  <div>
+    <input 
+      type="url" 
+      name="avatar_url" 
+      placeholder="http://"
+      value="{{ teacher.avatar_url }}"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <div>Nome Completo</div>
+  <div>
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Name"
+      value="{{ teacher.name }}"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <div>Data de nascimento</div>
+  <div>
+    <input 
+      type="date" 
+      name="birth"
+      value="{{ teacher.birth }}"
+    >
+  </div>
+</div>
+
+<div class="item">
+  <div>Grau de escolaridade</div>
+  <div>
+    <select name="escolaridade">
+
+      <option value="1"
+        {% if teacher.escolaridade == 1 %}
+          selected
+        {% endif %}
+        >
+        Ensino Médio Completo
+      </option>
+      <option value="2"
+        {% if teacher.escolaridade == 2 %}
+          selected
+        {% endif %}
+        >
+        Ensino Superior Completo
+      </option>
+      <option value="3"
+        {% if teacher.escolaridade == 3 %}
+          selected
+        {% endif %}
+        >
+        Mestrado
+      </option>
+      <option value="4"
+        {% if teacher.escolaridade == 4 %}
+          selected
+        {% endif %}
+        >
+        Doutorado
+      </option>
+    </select>
+  </div>
+</div>
+
+<div class="item">
+  <div>Tipo de aula</div>
+  <div>
+    <span>
+      <input 
+        type="radio" 
+        name="tipo_aula" 
+        value="pre"
+        {% if teacher.tipo_aula == 'pre' %}
+          checked
+        {% endif %}
+      >Presencial
+    </span>
+    <span>
+    <input 
+        type="radio" 
+        name="tipo_aula" 
+        value="dis"
+        {% if teacher.tipo_aula == 'dis' %}
+          checked
+        {% endif %}
+      >À distância
+    </span>
+  </div>
+</div>
+
+<div class="item">
+  <div>Acompanhamentos</div>
+  <div>
+    <input 
+      type="text" 
+      name="acompanhamentos" 
+      placeholder="Informe os valores separados por virgula"
+      value="{{ teacher.acompanhamentos }}"
+    >
+  </div>
+</div>
+
+<button type="submit">Enviar</button>

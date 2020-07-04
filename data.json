@@ -19,6 +19,16 @@
       "tipo_aula": "dis",
       "acompanhamentos": "Quimica",
       "created_at": 1593825704458
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1525571453712-090270b8354f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "name": "Julia Carneiro",
+      "birth": 953510400000,
+      "escolaridade": "4",
+      "tipo_aula": "pre",
+      "acompanhamentos": "Português, Linguas",
+      "created_at": 1593874988789
     }
   ]
 }
