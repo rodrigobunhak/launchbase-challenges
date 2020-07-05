@@ -2,13 +2,21 @@
 
 {% block content %}
 
-<form class="card" method="POST" action="/teachers?_method=PUT">
-    <section class="avatar" style="background:url({{ teacher.avatar_url }}) no-repeat center / cover"></section>
-    <section class="details">
-        {% include "teachers/fields.njk" %}
+<div class="card">
 
-        <input type="hidden" name="id" value="{{ teacher.id }}">
+    <section class="avatar" style="background:url({{ teacher.avatar_url }}) no-repeat center / cover"></section>
+
+    <section class="details">
+        <form method="POST" action="/teachers?_method=PUT">
+            {% include "teachers/fields.njk" %}
+            <input type="hidden" name="id" value="{{ teacher.id }}">
+        </form>
+
+        <form id="form-delete" method="POST" action="/teachers?_method=DELETE">
+            <button type="submit">Deletar</button>
+            <input type="hidden" name="id" value="{{ teacher.id }}">
+        </form>
     </section>
-</form>
+</div>
 
 {% endblock content %}

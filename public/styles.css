@@ -143,8 +143,8 @@ a.button {
   background-color: var(--primary-color);
   color: white;
   border-radius: 4px;
-  margin-top: 32px;
-  width: 100%;
+  margin-top: 16px;
+  width: 48%;
   font-size: 16px;
 }
 
@@ -153,4 +153,16 @@ a.button {
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
+  width: 100%;
+}
+
+#form-delete {
+  position: relative;
+}
+
+#form-delete button {
+  background-color: indianred;
+  position: absolute;
+  left: 216px;
+  bottom: 0;
 }

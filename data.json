@@ -1,34 +1,3 @@
 {
-  "teachers": [
-    {
-      "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1584277261846-c6a1672ed979?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1131&q=80",
-      "name": "John Vallajo II",
-      "birth": -222739200000,
-      "escolaridade": "4",
-      "tipo_aula": "pre",
-      "acompanhamentos": "Física, Matemática, Algebra",
-      "created_at": 1593824046957
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "name": "Ana Julia",
-      "birth": 743212800000,
-      "escolaridade": "3",
-      "tipo_aula": "dis",
-      "acompanhamentos": "Quimica, Biologia",
-      "created_at": 1593825704458
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://images.unsplash.com/photo-1525571453712-090270b8354f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      "name": "Julia Carneiro",
-      "birth": 953510400000,
-      "escolaridade": "4",
-      "tipo_aula": "pre",
-      "acompanhamentos": "Português, Linguas",
-      "created_at": 1593874988789
-    }
-  ]
+  "teachers": []
 }
