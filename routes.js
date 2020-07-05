@@ -17,13 +17,17 @@ routes.get('/teachers/create', function(req, res) {
 //* form route, get function of teacher file
 routes.post("/teachers", teachers.post)
 
-routes.get("/students", function(req, res) {
-  return res.render("layout")
-})
-
 routes.get("/teachers/:id", teachers.show)
 
 routes.get("/teachers/:id/edit", teachers.edit)
+
+routes.put("/teachers", teachers.put)
+
+
+
+routes.get("/students", function(req, res) {
+  return res.render("layout")
+})
 
 //* export routes 
 module.exports = routes

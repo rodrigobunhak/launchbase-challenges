@@ -78,3 +78,41 @@ exports.edit = function (req, res) {
 
   return res.render("teachers/edit", { teacher })
 }
+
+exports.put = function (req, res) {
+  
+  const { id } = req.body
+
+  // const keys = Object.keys(req.body)
+  
+  // for (key of keys) {
+  //   if (req.body[key] == "") {
+  //     return res.send('Please, fill all fields!')
+  //   }
+  // }
+
+  let index = 0
+
+  const foundTeacher = data.teachers.find(function(teacher, foundIndex){
+    if (teacher.id == id) {
+      index = foundIndex
+      return true
+    }
+    return teacher.id == id
+  })
+
+  const teacher = {
+    ...foundTeacher,
+    ...req.body,
+    birth: Date.parse(req.body.birth),
+    id: Number(req.body.id)
+  }
+
+  data.teachers[index] = teacher
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+    if (err) return res.send("Write file errow!")
+
+    return res.redirect(`/teachers/${id}`)
+  })
+}
