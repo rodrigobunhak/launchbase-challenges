@@ -13,6 +13,8 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `d00a6b1`     | Challenge 4-5 - HTTP: PUT and DELETE - DELETE |
+| `5433826`     | Challenge 4-5 - HTTP: PUT and DELETE - PUT |
 | `792c9fa`     | Challenge 4-4 - Presentation, edition and format data of a teacher - Edit |
 | `f0afa56`     | Challenge 4-4 - Presentation, edition and format data of a teacher - Show |
 | `6cd71ac`     | Challenge 4-3 - Form e Teacher register route |
