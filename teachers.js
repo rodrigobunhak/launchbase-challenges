@@ -6,6 +6,7 @@ exports.index = function(req, res) {
 
   for(const teacher of data.teachers) {
     teacher.tipo_aula = tipo_aula(teacher.tipo_aula)
+    teacher.acompanhamentos = teacher.acompanhamentos.toString().split(",")
   }
 
   return res.render('teachers/index', { teachers: data.teachers })
@@ -64,7 +65,7 @@ exports.show = function (req, res) {
     ...foundTeacher,
     age: age(foundTeacher.birth),
     escolaridade: graduation(foundTeacher.escolaridade),
-    acompanhamentos: foundTeacher.acompanhamentos.split(","),
+    acompanhamentos: foundTeacher.acompanhamentos.toString().split(","),
     tipo_aula: tipo_aula(foundTeacher.tipo_aula),
     created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at),
   }
