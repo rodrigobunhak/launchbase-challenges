@@ -2,6 +2,17 @@ const fs = require('fs')
 const data = require("./data.json")
 const { age, graduation, date, tipo_aula } = require('./utils')
 
+exports.index = function(req, res) {
+
+  for(const teacher of data.teachers) {
+    teacher.tipo_aula = tipo_aula(teacher.tipo_aula)
+  }
+
+  return res.render('teachers/index', { teachers: data.teachers })
+
+}
+
+
 exports.post = function (req, res) {
   /**
    * * get keys of req.body and valid all fields
