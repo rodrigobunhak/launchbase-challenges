@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="card table-container">
+    <table width="100%">
+        <thead>
+            <th>Name</th>
+            <th>Acompanhamentos</th>
+            <th>Ação</th>
+        </thead>
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <td>
+                    <span style="background-image: url({{ student.avatar_url }})"></span>
+                    {{ student.name }}
+                </td>
+                <td>
+                    {% for acompanhamento in student.acompanhamentos %}
+                        <span> {{ acompanhamento }} </span>
+                    {% endfor %}
+                </td>
+                <td><a href="/students/{{ student.id }}">Ver</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}
