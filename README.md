@@ -13,6 +13,9 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `c6440dc`     | Challenge 4-7 - Structuring students - Structure |
+| `f5950ac`     | Challenge 4-6 - Teachers list - Style |
+| `2cbfd52`     | Challenge 4-6 - Teachers list - List + Table |
 | `d00a6b1`     | Challenge 4-5 - HTTP: PUT and DELETE - DELETE |
 | `5433826`     | Challenge 4-5 - HTTP: PUT and DELETE - PUT |
 | `792c9fa`     | Challenge 4-4 - Presentation, edition and format data of a teacher - Edit |
