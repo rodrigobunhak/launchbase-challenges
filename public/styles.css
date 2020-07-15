@@ -30,6 +30,11 @@ header a {
   position: relative;
 }
 
+header a.active {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
 header a + a {
   margin-left: 30px;
 }

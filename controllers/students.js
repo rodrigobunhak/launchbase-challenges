@@ -3,7 +3,7 @@ const data = require("../data.json")
 const { age, graduation, date, tipo_aula } = require('../utils')
 
 exports.create = function(req, res) {
-  return res.render('members/create')
+  return res.render('students/create')
 }
 
 exports.index = function(req, res) {
