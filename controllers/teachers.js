@@ -8,11 +8,6 @@ exports.create = function(req, res) {
 
 exports.index = function(req, res) {
 
-  for(const teacher of data.teachers) {
-    teacher.tipo_aula = tipo_aula(teacher.tipo_aula)
-    teacher.acompanhamentos = teacher.acompanhamentos.toString().split(",")
-  }
-
   return res.render('teachers/index', { teachers: data.teachers })
 
 }
@@ -33,7 +28,12 @@ exports.post = function (req, res) {
 
   birth = Date.parse(birth)
   const created_at = Date.now()
-  const id = Number(data.teachers.length + 1)
+  
+  let id = 1
+  const lastId = data.teachers[data.teachers.length - 1].id
+  if (lastId) {
+    id = lastId + 1
+  }
 
   data.teachers.push({
     id,
@@ -42,9 +42,10 @@ exports.post = function (req, res) {
     birth,
     escolaridade,
     tipo_aula,
-    acompanhamentos,
+    acompanhamentos: acompanhamentos.toString().split(","),
     created_at
   })
+
 
   //* write on file data.json 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
@@ -88,7 +89,7 @@ exports.edit = function (req, res) {
 
   const teacher = {
     ...foundTeacher,
-    birth: date(foundTeacher.birth)
+    birth: date(foundTeacher.birth).iso
   }
 
   return res.render("teachers/edit", { teacher })
@@ -97,14 +98,6 @@ exports.edit = function (req, res) {
 exports.put = function (req, res) {
   
   const { id } = req.body
-
-  // const keys = Object.keys(req.body)
-  
-  // for (key of keys) {
-  //   if (req.body[key] == "") {
-  //     return res.send('Please, fill all fields!')
-  //   }
-  // }
 
   let index = 0
 
@@ -120,7 +113,8 @@ exports.put = function (req, res) {
     ...foundTeacher,
     ...req.body,
     birth: Date.parse(req.body.birth),
-    id: Number(req.body.id)
+    id: Number(req.body.id),
+    acompanhamentos: foundTeacher.acompanhamentos.toString().split(",")
   }
 
   data.teachers[index] = teacher

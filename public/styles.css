@@ -220,12 +220,20 @@ th {
 }
 
 
-.table-container tbody tr td a {
+.table-container tbody tr td a,
+.table-container > a {
   padding: 8px 32px;
   background-color: var(--primary-color);
   color: white;
   border-radius: 4px;
   margin-top: 16px;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.table-container > a {
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: inline-block;
 }

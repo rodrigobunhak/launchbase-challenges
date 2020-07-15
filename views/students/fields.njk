@@ -23,6 +23,17 @@
 </div>
 
 <div class="item">
+  <div>E-mail</div>
+  <div>
+    <input 
+      type="mail" 
+      name="mail"
+      value="{{ student.mail }}"
+    >
+  </div>
+</div>
+
+<div class="item">
   <div>Data de nascimento</div>
   <div>
     <input 
@@ -34,76 +45,28 @@
 </div>
 
 <div class="item">
-  <div>Grau de escolaridade</div>
+  <div>Ano Escolar</div>
   <div>
-    <select name="escolaridade">
-
-      <option value="1"
-        {% if student.escolaridade == 1 %}
-          selected
-        {% endif %}
-        >
-        Ensino Médio Completo
-      </option>
-      <option value="2"
-        {% if student.escolaridade == 2 %}
-          selected
-        {% endif %}
-        >
-        Ensino Superior Completo
-      </option>
-      <option value="3"
-        {% if student.escolaridade == 3 %}
-          selected
-        {% endif %}
-        >
-        Mestrado
-      </option>
-      <option value="4"
-        {% if student.escolaridade == 4 %}
-          selected
-        {% endif %}
-        >
-        Doutorado
-      </option>
+    <select name="ano_escolar">
+      <option value="5ef">5º ano do Ensino Fundamental</option>
+      <option value="6ef">6º ano do Ensino Fundamental</option>
+      <option value="7ef">7º ano do Ensino Fundamental</option>
+      <option value="8ef">8º ano do Ensino Fundamental</option>
+      <option value="9ef">9º ano do Ensino Fundamental</option>
+      <option value="1em">1º ano do Ensino Médio</option>
+      <option value="2em">2º ano do Ensino Médio</option>
+      <option value="3em">3º ano do Ensino Médio</option>
     </select>
   </div>
 </div>
 
 <div class="item">
-  <div>Tipo de aula</div>
-  <div>
-    <span>
-      <input 
-        type="radio" 
-        name="tipo_aula" 
-        value="pre"
-        {% if student.tipo_aula == 'pre' %}
-          checked
-        {% endif %}
-      >Presencial
-    </span>
-    <span>
-    <input 
-        type="radio" 
-        name="tipo_aula" 
-        value="dis"
-        {% if student.tipo_aula == 'dis' %}
-          checked
-        {% endif %}
-      >À distância
-    </span>
-  </div>
-</div>
-
-<div class="item">
-  <div>Acompanhamentos</div>
+  <div>Carga horária semanal</div>
   <div>
     <input 
-      type="text" 
-      name="acompanhamentos" 
-      placeholder="Informe os valores separados por virgula"
-      value="{{ student.acompanhamentos }}"
+      type="number" 
+      name="carga_horaria_semanal"
+      value="{{ student.carga_horaria_semanal }}"
     >
   </div>
 </div>
