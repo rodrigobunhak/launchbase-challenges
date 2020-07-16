@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require("../data.json")
-const { age, date } = require('../utils')
+const { age, date, grade } = require('../utils')
 
 exports.create = function(req, res) {
   return res.render('students/create')
@@ -64,7 +64,8 @@ exports.show = function (req, res) {
 
   const student = {
     ...foundStudent,
-    age: age(foundStudent.birth)
+    age: age(foundStudent.birth),
+    ano_escolar: grade(foundStudent.ano_escolar)
   }
 
   return res.render("students/show", { student })

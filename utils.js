@@ -54,5 +54,28 @@ module.exports = {
       default:
         return "Não possui dado informado"
     }
+  },
+  grade: function (type) {
+    
+    switch (type) {
+      case "5ef":
+        return "5º ano do Ensino Fundamental"
+      case "6ef":
+        return "6º ano do Ensino Fundamental"
+      case "7ef":
+        return "7º ano do Ensino Fundamental"
+      case "8ef":
+        return "8º ano do Ensino Fundamental"
+      case "9ef":
+        return "9º ano do Ensino Fundamental"
+      case "1em":
+        return "1º ano do Ensino Médio"
+      case "2em":
+        return "2º ano do Ensino Médio"
+      case "3em":
+        return "3º ano do Ensino Médio"
+      default:
+        return "Não possui dado informado"
+    }
   }
 }
