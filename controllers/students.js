@@ -9,7 +9,6 @@ exports.create = function(req, res) {
 exports.index = function(req, res) {
 
   return res.render('students/index', { students: data.students })
-
 }
 
 exports.post = function (req, res) {
@@ -65,7 +64,8 @@ exports.show = function (req, res) {
   const student = {
     ...foundStudent,
     age: age(foundStudent.birth),
-    ano_escolar: grade(foundStudent.ano_escolar)
+    ano_escolar: grade(foundStudent.ano_escolar),
+    birth: date(foundStudent.birth).birthDay
   }
 
   return res.render("students/show", { student })

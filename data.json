@@ -3,48 +3,14 @@
     {
       "id": 2,
       "avatar_url": "https://images.unsplash.com/photo-1532384305128-54c7ac0d7139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "name": "Rodrigo Augusto",
+      "name": "Joana Dark",
       "birth": 946684800000,
-      "mail": "rodrigo.bunhak@gmail.com",
-      "ano_escolar": "3em",
-      "carga_horaria_semanal": "20"
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://images.unsplash.com/photo-1532384305128-54c7ac0d7139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "name": "Rodrigo Augusto Bunhak Zwierzikowski",
-      "birth": 946684800000,
-      "mail": "rodrigo.bunhak@gmail.com",
-      "ano_escolar": "8ef",
+      "mail": "joana@gmail.com",
+      "ano_escolar": "2em",
       "carga_horaria_semanal": "20"
     }
   ],
   "teachers": [
-    {
-      "id": 4,
-      "avatar_url": "https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80",
-      "name": "Joana Queen Filha",
-      "birth": 941414400000,
-      "escolaridade": "1",
-      "tipo_aula": "pre",
-      "acompanhamentos": [
-        "Português",
-        " Linguas"
-      ],
-      "created_at": 1594856272264
-    },
-    {
-      "id": 5,
-      "avatar_url": "https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80",
-      "name": "Joana Queen Filha",
-      "birth": -27107481600000,
-      "escolaridade": "3",
-      "tipo_aula": "pre",
-      "acompanhamentos": [
-        "Física"
-      ],
-      "created_at": 1594856305591
-    },
     {
       "id": 6,
       "avatar_url": "https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
