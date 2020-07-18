@@ -13,6 +13,11 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `bd9b61d`     | Challenge 5-1 - Application refactoring and Database configuration |    
+| `5904054`     | Challenge 4-7 - Structuring students - Edtion, Remove and List |
+| `2c5e55f`     | Challenge 4-7 - Structuring students - Apresentation |
+| `cffc05e`     | Challenge 4-7 - Structuring students - Saving Data |
+| `5b08155`     | Challenge 4-7 - Structuring students - Active Menu |
 | `c6440dc`     | Challenge 4-7 - Structuring students - Structure |
 | `f5950ac`     | Challenge 4-6 - Teachers list - Style |
 | `2cbfd52`     | Challenge 4-6 - Teachers list - List + Table |
