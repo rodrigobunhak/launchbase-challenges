@@ -1,5 +1,5 @@
 module.exports = {
-  age: function (timestamp) {
+  age(timestamp) {
     const today = new Date()
     const birthDate = new Date(timestamp)
 
@@ -14,7 +14,7 @@ module.exports = {
 
     return age
   },
-  date: function (timestamp) {
+  date(timestamp) {
     const date = new Date(timestamp)
 
     const year = date.getUTCFullYear()
@@ -29,7 +29,7 @@ module.exports = {
       birthDay: `${day}/${month}`
     }
   },
-  graduation: function (id) {
+  graduation(id) {
 
     switch (Number(id)) {
       case 1:
@@ -44,7 +44,7 @@ module.exports = {
         return "Não possui escolaridade informada"
     }
   },
-  tipo_aula: function (type) {
+  tipo_aula(type) {
     
     switch (type) {
       case "pre":
@@ -55,7 +55,7 @@ module.exports = {
         return "Não possui dado informado"
     }
   },
-  grade: function (type) {
+  grade(type) {
     
     switch (type) {
       case "5ef":
