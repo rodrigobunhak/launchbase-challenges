@@ -18,9 +18,7 @@
                     {{ teacher.name }}
                 </td>
                 <td>
-                    {% for acompanhamento in teacher.acompanhamentos %}
-                        <span> {{ acompanhamento }} </span>
-                    {% endfor %}
+                    <p> {{ teacher.subjects_taught }} </p>
                 </td>
                 <td><a href="/teachers/{{ teacher.id }}">Ver</a></td>
             </tr>

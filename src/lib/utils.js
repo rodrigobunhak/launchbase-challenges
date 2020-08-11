@@ -26,7 +26,8 @@ module.exports = {
       month,
       year, 
       iso: `${year}-${month}-${day}`,
-      birthDay: `${day}/${month}`
+      birthDay: `${day}/${month}`,
+      format: `${day}/${month}/${year}`
     }
   },
   graduation(id) {
@@ -44,7 +45,7 @@ module.exports = {
         return "Não possui escolaridade informada"
     }
   },
-  tipo_aula(type) {
+  class_type(type) {
     
     switch (type) {
       case "pre":

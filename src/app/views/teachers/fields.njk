@@ -27,8 +27,8 @@
   <div>
     <input 
       type="date" 
-      name="birth"
-      value="{{ teacher.birth }}"
+      name="birth_date"
+      value="{{ teacher.birth_date }}"
     >
   </div>
 </div>
@@ -36,31 +36,31 @@
 <div class="item">
   <div>Grau de escolaridade</div>
   <div>
-    <select name="escolaridade">
+    <select name="education_level">
 
       <option value="1"
-        {% if teacher.escolaridade == 1 %}
+        {% if teacher.education_level == 1 %}
           selected
         {% endif %}
         >
         Ensino Médio Completo
       </option>
       <option value="2"
-        {% if teacher.escolaridade == 2 %}
+        {% if teacher.education_level == 2 %}
           selected
         {% endif %}
         >
         Ensino Superior Completo
       </option>
       <option value="3"
-        {% if teacher.escolaridade == 3 %}
+        {% if teacher.education_level == 3 %}
           selected
         {% endif %}
         >
         Mestrado
       </option>
       <option value="4"
-        {% if teacher.escolaridade == 4 %}
+        {% if teacher.education_level == 4 %}
           selected
         {% endif %}
         >
@@ -76,9 +76,9 @@
     <span>
       <input 
         type="radio" 
-        name="tipo_aula" 
+        name="class_type" 
         value="pre"
-        {% if teacher.tipo_aula == 'pre' %}
+        {% if teacher.class_type== 'pre' %}
           checked
         {% endif %}
       >Presencial
@@ -86,9 +86,9 @@
     <span>
     <input 
         type="radio" 
-        name="tipo_aula" 
+        name="class_type" 
         value="dis"
-        {% if teacher.tipo_aula == 'dis' %}
+        {% if teacher.class_type == 'dis' %}
           checked
         {% endif %}
       >À distância
@@ -101,9 +101,9 @@
   <div>
     <input 
       type="text" 
-      name="acompanhamentos" 
+      name="subjects_taught" 
       placeholder="Informe os valores separados por virgula"
-      value="{{ teacher.acompanhamentos }}"
+      value="{{ teacher.subjects_taught }}"
     >
   </div>
 </div>
