@@ -13,6 +13,7 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `bac7821`     | Challenge 5-2 - Interacting with DB |
 | `bd9b61d`     | Challenge 5-1 - Application refactoring and Database configuration |    
 | `5904054`     | Challenge 4-7 - Structuring students - Edtion, Remove and List |
 | `2c5e55f`     | Challenge 4-7 - Structuring students - Apresentation |
