@@ -3,11 +3,23 @@
 {% block content %}
 
 <div class="card table-container">
-    <a href="/teachers/create">Create</a>
+    <div class="header">
+        <a class="button" href="/teachers/create">Create</a>
+        <form action="/teachers" method="GET">
+            <input 
+                type="text" 
+                name="filter" 
+                placeholder="Nome ou Acompanhamento"
+                value={{filter}}
+            >
+            <button type="submit">Filtrar</button>
+        </form>
+    </div>
     <table width="100%">
         <thead>
             <th>Name</th>
             <th>Acompanhamentos</th>
+            <th>Alunos</th>
             <th>Ação</th>
         </thead>
         <tbody>
@@ -19,6 +31,9 @@
                 </td>
                 <td>
                     <p> {{ teacher.subjects_taught }} </p>
+                </td>
+                <td>
+                    {{ teacher.total_students }}
                 </td>
                 <td><a href="/teachers/{{ teacher.id }}">Ver</a></td>
             </tr>

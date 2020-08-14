@@ -3,7 +3,14 @@ const db = require('../../config/db');
 
 module.exports = {
   all(callback) {
-    db.query(`SELECT * FROM students ORDER BY name ASC`, function(err, results) {
+    db.query(`
+    SELECT students.*, teachers.name AS teacher_name
+    FROM students
+    LEFT JOIN teachers ON (students.teacher_id = teachers.id)
+    ORDER BY students.name ASC
+    `
+    ,
+    function(err, results) {
       if(err) throw `Database error: ${err}`;
 
       callback(results.rows);
@@ -19,8 +26,9 @@ module.exports = {
         mail,
         grade,
         weekly_workload,
-        created_at
-      ) VALUES ($1, $2, $3, $4, $5, $6, $7)
+        created_at,
+        teacher_id
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
       RETURNING id
     `
 
@@ -31,7 +39,8 @@ module.exports = {
       data.mail,
       data.grade,
       data.weekly_workload,
-      date(Date.now()).iso
+      date(Date.now()).iso,
+      data.teacher
     ]
 
     db.query(query, values, function(err, results) {
@@ -42,9 +51,12 @@ module.exports = {
   },
   find(id, callback) {
     db.query(`
-      SELECT *
-      FROM students 
-      WHERE id = $1`, [id], function(err, results) {
+      SELECT students.*, teachers.name AS teacher_name
+      FROM students
+      LEFT JOIN teachers ON (students.teacher_id = teachers.id)
+      WHERE students.id = $1
+      ORDER BY students.name ASC 
+      `, [id], function(err, results) {
         if(err) throw `Database Error: ${err}`;
 
         callback(results.rows[0]);
@@ -59,8 +71,9 @@ module.exports = {
       birth_date=($3),
       mail=($4),
       grade=($5),
-      weekly_workload=($6)
-    WHERE id = $7
+      weekly_workload=($6),
+      teacher_id=($7)
+    WHERE id = $8
     `
 
     const values = [
@@ -70,6 +83,7 @@ module.exports = {
       data.mail,
       data.grade,
       data.weekly_workload,
+      data.teacher,
       data.id
     ]
 
@@ -84,6 +98,13 @@ module.exports = {
       if(err) throw `Database Error: ${err}`;
 
       callback();
+    })
+  },
+  teacherSelectOptions(callback) {
+    db.query(`SELECT name, id FROM teachers`, function(err, results) {
+      if(err) throw `Database error: ${err}`;
+
+      callback(results.rows)
     })
   }
 }

@@ -1,5 +1,5 @@
 const { age, grade, date } = require('../../lib/utils');
-const Student = require('../models/Students');
+const Student = require('../models/Student');
 
 module.exports = {
   index(req, res){
@@ -12,7 +12,9 @@ module.exports = {
   },
   create(req, res){
 
-    return res.render('students/create');
+    Student.teacherSelectOptions(function(options) {
+      return res.render("students/create", {teacherOptions: options})
+    })
 
   },
   post(req, res){
@@ -38,8 +40,10 @@ module.exports = {
       student.birth_date = age(student.birth_date)
       student.grade = grade(student.grade)
       student.birth = date(student.birth_date).birthDay
-    
-      return res.render("students/show", { student })
+
+      Student.teacherSelectOptions(function(options) {
+        return res.render("students/show", { student, teacherOptions: options })
+      })
     })
 
   },
@@ -51,8 +55,9 @@ module.exports = {
 
       student.birth_date = date(student.birth_date).iso
 
-      return res.render('students/edit', {student});
-
+      Student.teacherSelectOptions(function(options) {
+        return res.render('students/edit', {student, teacherOptions: options});
+      })
     })
 
   },
