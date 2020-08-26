@@ -13,6 +13,10 @@ Challenges resolved and separated by commit, as listed below.
 
 | Abbrev hash   | Message    |                                     
 | ------------- | ---------- | 
+| `5830241`     | Challenge 5-4 - Pagination of results with DB - Last Adjustment |    
+| `50a4b75`     | Challenge 5-4 - Pagination of results with DB - Frontend |
+| `616868f`     | Challenge 5-4 - Pagination of results with DB - Backend |
+| `e0eb8db`     | Challenge 5-3 - Relations and filters on DB |
 | `bac7821`     | Challenge 5-2 - Interacting with DB |
 | `bd9b61d`     | Challenge 5-1 - Application refactoring and Database configuration |    
 | `5904054`     | Challenge 4-7 - Structuring students - Edtion, Remove and List |
