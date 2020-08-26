@@ -131,7 +131,7 @@ module.exports = {
     }
 
     query = `
-      SELECT students.name, students.mail, students.avatar_url, students.grade
+      SELECT students.name, students.mail, students.avatar_url, students.grade, ${totalQuery}
       FROM students
       ${filterQuery}
       LIMIT $1 OFFSET $2

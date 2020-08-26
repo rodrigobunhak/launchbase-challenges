@@ -4,7 +4,7 @@ const Teacher = require('../models/Teacher');
 module.exports = {
   index(req, res){
 
-    let {filter, page, limit} = req.body
+    let {filter, page, limit} = req.query
     
     page = page || 1
     limit = limit || 2
