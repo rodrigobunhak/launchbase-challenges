@@ -135,7 +135,7 @@ module.exports = {
     }
 
     query = `
-      SELECT teachers.name, teachers.subjects_taught, teachers.avatar_url, ${totalQuery}, count(students) AS total_students
+      SELECT teachers.name, teachers.subjects_taught, teachers.avatar_url, teachers.id, ${totalQuery}, count(students) AS total_students
       FROM teachers
       LEFT JOIN students ON (teachers.id = students.teacher_id)
       ${filterQuery}
